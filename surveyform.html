@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+       <title> Survey Form </title>
+       <link rel="stylesheet" type="text/css" href="surveyform.css">
+       <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div class="container">
+        <header class="header">
+            <h1 id="title"> "Otaku" The Anime Enthusiast Survey </h1>
+            <p id="description"> Tell us your anime/manga interests </p>
+        </header>
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Name: </label>
+                <input type="text" id="name" class="form-control" name="name" placeholder=" Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="email">Email: </label>
+                <input type="email" id="email" class="form-control" name="email" placeholder=" Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="number">Age: </label>
+                <input type="number" id="number" class="form-control" name="age" placeholder=" Enter your age" min="10" max="99" required>
+            </div>
+            <div class="form-group">
+                <label for="dropdown">  Do you prefer anime or manga? </label>
+                <select id="dropdown" class="form-control">
+                    <option disabled selected value> select option </option> 
+                    <option> Anime </option>
+                    <option> Manga </option>
+                    <option> Both </option>
+                </select>
+            </div>
+            <div class="form-group">
+                <fieldset id="f1">
+                    <legend>What's your favourite anime/manga genre? </legend>
+                    <input type="radio" name="genre" value="shonen" checked> Shonen <br>
+                    <input type="radio" name="genre" value="shojo"> Shojo <br>
+                    <input type="radio" name="genre" value="sienen"> Sienen <br>
+                    <input type="radio" name="genre" value="josei"> Josei <br>
+                    <input type="radio" name="genre" value="kodomomuke"> Kodomomuke
+                </fieldset>
+            </div>
+            <div class="form-group">
+                <fieldset>
+                    <legend> What're your favourite popular anime/manga?
+                        <span class="hint">(Check all that apply)</span>
+                    </legend>
+                    <input type="checkbox" name="fave" value="naruto"> Naruto <br>
+                    <input type="checkbox" name="fave" value="bleach"> Bleach <br>
+                    <input type="checkbox" name="fave" value="one-piece"> One piece <br>
+                    <input type="checkbox" name="fave" value="dragon-ball"> Dragon Ball <br>
+                    <input type="checkbox" name="fave" value="death-note"> Death Note <br>
+                    <input type="checkbox" name="fave" value="beserk"> Beserk <br>
+                    <input type="checkbox" name="fave" value="hunter-hunter"> Hunter X Hunter <br>
+                    <input type="checkbox" name="fave" value="cowboy-bebop"> Cowboy Bebop <br>
+                    <input type="checkbox" name="fave" value="pokemon"> Pokémon <br>
+                    <input type="checkbox" name="fave" value="fma"> Full Metal Alchemist <br>
+                    <input type="checkbox" name="fave" value="other"> Other <br>
+                </fieldset>
+            </div>
+            <div class="form-group">
+                <label for="comments"> Tell us more about your anime/manga interests </label>
+                <textarea id="comments" placeholder=" Enter your comments here..."></textarea>
+            </div>
+            <div>
+                <input type="submit" id="submit" value="Submit" class="button">
+            </div>
+        </form>
+        </div>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </body>
+</html>
